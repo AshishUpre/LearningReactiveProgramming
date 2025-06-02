@@ -47,3 +47,14 @@ We can convert one exception to another exception.
 
 ## Database - reactive programming
 We will use mongodb, using reactive programming
+
+## Backpressure
+Provides flow control 
+    extra requests handled gracefully --- extras stored in buffer and processed later
+
+- Allows system to control pace of data flow based on capacity of the consumer - preventing overloading consumer
+- Ensures that producer doesn't produce more data than consumer can handle
+- Helps in system stability
+
+## Thanks
+https://youtu.be/y3ySZkSgWik

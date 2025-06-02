@@ -1,0 +1,100 @@
+### POst
+POST localhost:8080/customer/create
+content-type: application/json
+
+{
+    "name": "John Doe",
+    "job": "programmer"
+}
+
+
+### GET
+GET localhost:8080/customer/findById?customer-id=0e77489b-a447-47b5-84c7-7788045fe366
+
+### POST
+POST localhost:8080/order/create
+content-type: application/json
+
+{
+  "customerId": "0e77489b-a447-47b5-84c7-7788045fe366",
+  "total": 100.0,
+  "discount": 10.0
+}
+
+### Create Customer 1
+POST http://localhost:8080/customer/create
+Content-Type: application/json
+
+{
+  "name": "Alice Smith",
+  "job": "Designer"
+}
+
+### Create Customer 2
+POST http://localhost:8080/customer/create
+Content-Type: application/json
+
+{
+  "name": "Bob Johnson",
+  "job": "DevOps Engineer"
+}
+
+### Create Customer 3
+POST http://localhost:8080/customer/create
+Content-Type: application/json
+
+{
+  "name": "Clara White",
+  "job": "Data Scientist"
+}
+
+
+### Order 1 for Alice Smith
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+  "customerId": "e4c0c3e2-1207-4aab-acc3-0365d361df21",
+  "total": 200,
+  "discount": 20
+}
+
+### Order 2 for Alice Smith
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+  "customerId": "e4c0c3e2-1207-4aab-acc3-0365d361df21",
+  "total": 150,
+  "discount": 10
+}
+
+### Order for Bob Johnson
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+  "customerId": "7823b530-a073-4740-bc38-c2ab9e908dcb",
+  "total": 300,
+  "discount": 30
+}
+
+### Orders for Clara White
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+  "customerId": "1fc9e83a-454a-455e-bbf2-d75db814084e",
+  "total": 400,
+  "discount": 40
+}
+
+###
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+  "customerId": "1fc9e83a-454a-455e-bbf2-d75db814084e",
+  "total": 120,
+  "discount": 5
+}
