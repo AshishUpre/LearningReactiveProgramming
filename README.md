@@ -56,5 +56,15 @@ Provides flow control
 - Ensures that producer doesn't produce more data than consumer can handle
 - Helps in system stability
 
+## Why reactive programming?
+- No blocking wait => threads can be used for other tasks => fewer threads
+- lesser resources required
+- Ideal for microservices often deployed on cloud / container environments
+- better for streaming data - seamlessly interact with reactive programming libs
+- Efficient for handling large data streams
+- Real time data processing
+
+
+
 ## Thanks
-https://youtu.be/y3ySZkSgWik
+Possible because of https://youtu.be/y3ySZkSgWik
